@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="463.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.inicioControl">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ddbbe" height="478.0" layoutX="-6.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="298.0" />
+      <ImageView fitHeight="246.0" fitWidth="298.0" layoutX="-7.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logoBVEHD.png" />
+         </image>
+      </ImageView>
+      <TabPane layoutX="292.0" prefHeight="477.0" prefWidth="414.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Acceso clientes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="440.0" prefWidth="414.0">
+                     <children>
+                        <Label layoutX="108.0" layoutY="119.0" prefHeight="32.0" prefWidth="179.0" text="Correo" />
+                        <TextField fx:id="textoCorreo" layoutX="106.0" layoutY="151.0" />
+                        <PasswordField fx:id="textoContra" layoutX="106.0" layoutY="215.0" />
+                        <Label layoutX="106.0" layoutY="183.0" prefHeight="32.0" prefWidth="179.0" text="Contraseña" />
+                        <Button id="botonIniciar" fx:id="botonIniciar" layoutX="147.0" layoutY="264.0" mnemonicParsing="false" onAction="#IniciarCliente" text="Iniciar sesión" />
+                        <Button id="botonCrearCliente" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#CrearCliente" text="Crear cuenta" />
+                        <Button id="botonContra" fx:id="botonContra" layoutX="289.0" layoutY="361.0" mnemonicParsing="false" onAction="#pasarContra" text="Cont. olvidada" />
+                        <Label fx:id="textoSaludo" alignment="CENTER" layoutX="47.0" layoutY="71.0" prefHeight="39.0" prefWidth="298.0" text="Label">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Acceso empleados">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="353.0" prefWidth="414.0" />
+            </content>
+          </Tab>
+            <Tab text="Acceso jefes">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

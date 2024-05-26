@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="303.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.pagarPrestamoControl">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ddbbe" height="184.0" layoutX="-20.0" layoutY="-106.0" rotate="-7.9" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="555.0" />
+      <Label layoutX="40.0" layoutY="23.0" text="Pagando préstamo">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Line endX="122.70001220703125" endY="-7.62939453125E-6" layoutX="140.0" layoutY="70.0" startX="-100.0">
+         <effect>
+            <MotionBlur radius="63.0" />
+         </effect>
+      </Line>
+      <Label layoutX="39.0" layoutY="167.0" text="Cantidad a introducir" />
+      <TextField fx:id="textoCantidad" layoutX="270.0" layoutY="162.0" prefHeight="32.0" prefWidth="124.0" />
+      <Button fx:id="botonAceptar" layoutX="236.0" layoutY="234.0" mnemonicParsing="false" onAction="#Pagar" text="Aceptar" />
+      <Button fx:id="botonVolver" layoutX="151.0" layoutY="238.0" mnemonicParsing="false" onAction="#volver" text="Volver">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Label layoutX="39.0" layoutY="123.0" text="Cantidad pendiente" />
+      <Label fx:id="textoRestante" layoutX="271.0" layoutY="123.0" prefHeight="22.0" prefWidth="124.0" text="Label" />
+   </children>
+</AnchorPane>

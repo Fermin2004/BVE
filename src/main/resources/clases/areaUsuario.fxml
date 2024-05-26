@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="panelCuerpo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.areaUsuarioControl">
+   <top>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="65.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <left>
+            <TextFlow BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="40.0" top="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label prefHeight="38.0" prefWidth="99.0" text="Usuario">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </TextFlow>
+         </left>
+         <bottom>
+            <Line endX="100.0" startX="-70.0" BorderPane.alignment="TOP_LEFT">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="25.0" top="5.0" />
+               </BorderPane.margin>
+               <effect>
+                  <MotionBlur radius="63.0" />
+               </effect>
+            </Line>
+         </bottom>
+         <center>
+            <Label prefHeight="26.0" prefWidth="168.0" text="Información personal" BorderPane.alignment="CENTER_LEFT">
+               <BorderPane.margin>
+                  <Insets top="25.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="186.0" prefWidth="680.0" BorderPane.alignment="CENTER">
+         <top>
+            <TextFlow prefHeight="39.0" prefWidth="291.0" BorderPane.alignment="TOP_LEFT">
+               <BorderPane.margin>
+                  <Insets left="40.0" top="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label prefHeight="38.0" prefWidth="86.0" text="Cuenta">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Información de la cuenta">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="8.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </TextFlow>
+         </top>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <left>
+            <Line endX="100.0" startX="-100.0" BorderPane.alignment="CENTER">
+               <effect>
+                  <MotionBlur radius="63.0" />
+               </effect>
+               <BorderPane.margin>
+                  <Insets bottom="30.0" left="25.0" />
+               </BorderPane.margin>
+            </Line>
+         </left>
+         <bottom>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label style="-fx-font-style: italic;" text="IBAN" />
+                  <Label fx:id="textoIBAN" text="Label">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Label>
+                  <Label style="-fx-font-style: italic;" text="Tipo de cuenta" GridPane.rowIndex="1" />
+                  <Label fx:id="textoTipo" prefHeight="22.0" prefWidth="187.0" text="Label" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="100.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="30.0" left="50.0" right="50.0" />
+               </padding>
+            </GridPane>
+         </bottom></BorderPane>
+   </bottom>
+   <center>
+      <GridPane fx:id="gridUsuario" prefHeight="182.0" prefWidth="579.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="22.0" prefWidth="56.0" style="-fx-font-style: italic;" text="Nombre" wrapText="true" />
+            <Label style="-fx-font-style: italic;" text="Ciudad" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#CambiarNombre" text="Modificar" GridPane.columnIndex="1">
+               <BorderPane.margin>
+                  <Insets left="100.0" />
+               </BorderPane.margin>
+               <GridPane.margin>
+                  <Insets left="95.0" />
+               </GridPane.margin></Button>
+            <Label style="-fx-font-style: italic;" text="Cuenta" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#CambiarTelf" text="Modificar" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="95.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="botonCiudad" mnemonicParsing="false" onAction="#CambiarCiudad" text="Modificar" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="95.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#CambiarDirec" text="Modificar" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="95.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#CambiarCorreo" text="Modificar" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="95.0" />
+               </GridPane.margin></Button>
+            <Label fx:id="textoCorreo" text="Label" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="52.0" />
+               </GridPane.margin>
+            </Label>
+            <Label style="-fx-font-style: italic;" text="Teléfono" GridPane.rowIndex="1" />
+            <Label fx:id="textoTelf" text="Label" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="textoNombre" text="Label">
+               <GridPane.margin>
+                  <Insets left="58.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="textoCiudad" prefHeight="22.0" prefWidth="139.0" text="Label" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="52.0" />
+               </GridPane.margin>
+            </Label>
+            <Label style="-fx-font-style: italic;" text="Direc" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label fx:id="textoDirecc" text="Label" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets left="50.0" right="50.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>

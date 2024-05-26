@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="cuerpo" alignment="CENTER" layoutY="13.0" prefHeight="228.0" prefWidth="354.0" spacing="20.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bve.HelloController">
+   <TextField fx:id="textoNombre" prefHeight="22.0" prefWidth="22.0" />
+
+  <Label fx:id="welcomeText" />
+  <Button onAction="#cambiarAEscena2" text="Hello!" />
+   <Label fx:id="saludo" alignment="CENTER" layoutX="16.0" prefHeight="43.0" prefWidth="267.0" text="Esto es la escena 1">
+      <font>
+         <Font size="29.0" />
+      </font></Label>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

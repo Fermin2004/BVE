@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bve.saludoControl">
+   <children>
+      <Label alignment="CENTER" layoutX="11.0" layoutY="189.0" prefHeight="22.0" prefWidth="577.0" text="Esta es la escena 2" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font></Label>
+      <Button layoutX="269.0" layoutY="258.0" mnemonicParsing="false" onAction="#cambiarAEscena1" text="Button" />
+      <Label fx:id="textoNombre" layoutX="109.0" layoutY="314.0" prefHeight="39.0" prefWidth="358.0" text="Bienvenido: " />
+   </children>
+</AnchorPane>

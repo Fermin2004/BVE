@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="panelCuerpo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.areaInicialControl">
+   <top>
+      <BorderPane prefHeight="65.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <left>
+            <Label text="Inicio" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets left="50.0" top="20.0" />
+               </BorderPane.margin>
+            </Label>
+         </left>
+         <bottom>
+            <Line endX="100.0" startX="-70.0" BorderPane.alignment="TOP_LEFT">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="25.0" top="5.0" />
+               </BorderPane.margin>
+               <effect>
+                  <MotionBlur radius="63.0" />
+               </effect>
+            </Line>
+         </bottom>
+      </BorderPane>
+   </top>
+   <left>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <Label fx:id="textoCapital" alignment="CENTER" prefHeight="43.0" prefWidth="177.0" stylesheets="@areaInicial.css" text="Label" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <AnchorPane prefHeight="70.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="44.0" layoutY="14.0" stylesheets="@areaInicial.css" text="Patrimonio actual" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </left>
+</BorderPane>

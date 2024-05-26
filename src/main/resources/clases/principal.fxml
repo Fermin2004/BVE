@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.principalControl">
+   <top>
+      <BorderPane prefHeight="37.0" prefWidth="912.0" style="-fx-background-color: #1ddbbe;" BorderPane.alignment="CENTER">
+         <left>
+            <ImageView fitHeight="84.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@logoBVEHD2.jpg" />
+               </image>
+               <BorderPane.margin>
+                  <Insets left="27.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </left>
+         <right>
+            <Button fx:id="botonCerrar" alignment="CENTER" mnemonicParsing="false" onAction="#pasarAInicio" prefHeight="47.0" prefWidth="134.0" style="-fx-cursor: pointer;" stylesheets="@principal.css" text="Cerrar sesión" textFill="WHITE" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="10.0" top="26.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+         </right>
+         <center>
+            <Label fx:id="textoNombre" alignment="CENTER" text="Label" textFill="WHITE" BorderPane.alignment="CENTER_RIGHT">
+               <BorderPane.margin>
+                  <Insets right="35.0" top="25.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </center>
+         <bottom>
+            <Button fx:id="botonMenu" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#MostrarMenu" prefHeight="24.0" prefWidth="200.0" stylesheets="@principal.css" text="Menú" textFill="WHITE" BorderPane.alignment="CENTER_LEFT">
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </bottom>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </BorderPane>
+   </top>
+   <left>
+      <VBox fx:id="panelBotones" prefHeight="446.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="botonInicio" mnemonicParsing="false" onAction="#cambiarInicio" prefHeight="130.0" prefWidth="200.0" stylesheets="@principal.css" textFill="WHITE">
+               <graphic>
+                  <BorderPane fx:id="cuerpoInicio" prefHeight="58.0" prefWidth="200.0" stylesheets="@principal.css">
+                     <left>
+                        <ImageView fitHeight="38.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@casa.png" />
+                           </image>
+                        </ImageView>
+                     </left>
+                     <center>
+                        <Label text="Inicio" textFill="WHITE" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Label>
+                     </center>
+                     <padding>
+                        <Insets left="-1.0" />
+                     </padding>
+                  </BorderPane>
+               </graphic></Button>
+            <Button fx:id="botonUsuario" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#cambiarUsuario" prefHeight="130.0" prefWidth="230.0" stylesheets="@principal.css" textFill="WHITE">
+               <graphic>
+                  <BorderPane prefHeight="58.0" prefWidth="200.0">
+                     <left>
+                        <ImageView fitHeight="38.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@usuario.png" />
+                           </image>
+                        </ImageView>
+                     </left>
+                     <center>
+                        <Label text="Usuario" textFill="WHITE" BorderPane.alignment="CENTER" />
+                     </center></BorderPane>
+               </graphic></Button>
+            <Button fx:id="botonTarjetas" layoutX="10.0" layoutY="42.0" mnemonicParsing="false" onAction="#cambiarTarjetas" prefHeight="130.0" prefWidth="230.0" stylesheets="@principal.css" textFill="WHITE">
+               <graphic>
+                  <BorderPane prefHeight="58.0" prefWidth="200.0">
+                     <center>
+                        <Label contentDisplay="CENTER" text="Tarjetas" textFill="WHITE" BorderPane.alignment="CENTER" />
+                     </center>
+                     <left>
+                        <ImageView fitHeight="38.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@tarjeta.png" />
+                           </image></ImageView>
+                     </left></BorderPane>
+               </graphic></Button>
+            <Button fx:id="botonMovs" layoutX="10.0" layoutY="42.0" mnemonicParsing="false" onAction="#cambiarMovimientos" prefHeight="130.0" prefWidth="230.0" stylesheets="@principal.css" textFill="WHITE">
+               <graphic>
+                  <BorderPane prefHeight="58.0" prefWidth="200.0">
+                     <center>
+                        <Label text="Movimientos" textFill="WHITE" BorderPane.alignment="CENTER" />
+                     </center>
+                     <left>
+                        <ImageView fitHeight="38.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@flechas_movi.png" />
+                           </image>
+                        </ImageView>
+                     </left></BorderPane>
+               </graphic></Button>
+            <Button fx:id="botonTransfers" layoutX="10.0" layoutY="42.0" mnemonicParsing="false" onAction="#cambiarTransferencias" prefHeight="130.0" prefWidth="230.0" stylesheets="@principal.css" textFill="WHITE">
+               <graphic>
+                  <BorderPane prefHeight="58.0" prefWidth="200.0">
+                     <center>
+                        <Label text="Transferencias" textFill="WHITE" BorderPane.alignment="CENTER" />
+                     </center>
+                     <left>
+                        <ImageView fitHeight="38.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@flechas.png" />
+                           </image>
+                        </ImageView>
+                     </left></BorderPane>
+               </graphic></Button>
+            <Button fx:id="botonBuzon" layoutX="10.0" layoutY="106.0" mnemonicParsing="false" onAction="#cambiarBuzon" prefHeight="130.0" prefWidth="230.0" stylesheets="@principal.css" textFill="WHITE">
+               <graphic>
+                  <BorderPane prefHeight="58.0" prefWidth="200.0">
+                     <center>
+                        <Label text="Buzón" textFill="WHITE" BorderPane.alignment="CENTER" />
+                     </center>
+                     <left>
+                        <ImageView fitHeight="38.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@buzon.png" />
+                           </image>
+                        </ImageView>
+                     </left></BorderPane>
+               </graphic></Button>
+            <Button fx:id="botonPrest" layoutX="10.0" layoutY="74.0" mnemonicParsing="false" onAction="#cambiarPrestamo" prefHeight="130.0" prefWidth="230.0" stylesheets="@principal.css" textFill="WHITE">
+               <graphic>
+                  <BorderPane prefHeight="58.0" prefWidth="200.0">
+                     <center>
+                        <Label text="Préstamo" textFill="WHITE" BorderPane.alignment="CENTER" />
+                     </center>
+                     <left>
+                        <ImageView fitHeight="38.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@prestamo.png" />
+                           </image></ImageView>
+                     </left></BorderPane>
+               </graphic></Button>
+            <Button fx:id="botonConf" layoutX="10.0" layoutY="106.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="230.0" stylesheets="@principal.css" textFill="WHITE">
+               <graphic>
+                  <BorderPane prefHeight="68.0" prefWidth="200.0">
+                     <center>
+                        <Label text="Configuración" textFill="WHITE" BorderPane.alignment="CENTER" />
+                     </center>
+                     <left>
+                        <ImageView fitHeight="38.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@config.png" />
+                           </image>
+                        </ImageView>
+                     </left></BorderPane>
+               </graphic></Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane fx:id="panelCuerpo" prefHeight="446.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

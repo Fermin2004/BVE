@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="374.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.contraClienteControl">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ddbbe" height="628.0" layoutX="123.0" layoutY="-383.0" rotate="81.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="319.0" />
+      <TextField fx:id="textoCorreo" layoutX="212.0" layoutY="157.0" />
+      <TextField fx:id="textoDNI" layoutX="212.0" layoutY="219.0" />
+      <Button fx:id="botonAceptar" layoutX="266.0" layoutY="282.0" mnemonicParsing="false" onAction="#MandarContra" text="Mandar" />
+      <Button fx:id="botonVolver" layoutX="190.0" layoutY="286.0" mnemonicParsing="false" onAction="#Volver" text="Volver">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Line endX="190.0" layoutX="141.0" layoutY="66.0" startX="-100.0">
+         <effect>
+            <MotionBlur radius="63.0" />
+         </effect>
+      </Line>
+      <TextFlow layoutX="24.0" layoutY="25.0" prefHeight="52.0" prefWidth="378.0">
+         <children>
+            <Label text="Solicitando contraseña">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="64.0" text="Cliente">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></TextFlow>
+      <Label layoutX="50.0" layoutY="128.0" text="Introduzca su correo electrónico y DNI para mandar su contraseña a su correo." />
+      <Label layoutX="288.0" layoutY="193.0" text="DNI" />
+   </children>
+</AnchorPane>

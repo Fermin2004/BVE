@@ -1,0 +1,43 @@
+#botonCerrar, #botonMenu{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+#botonCerrar:hover, #botonMenu: hover{
+    -fx-background-color: #00C2A4;
+}
+
+#botonCerrar:pressed{
+    -fx-border-color: #17AD96;
+    -fx-border-width: 2;
+}
+
+#botonMenu: pressed{
+    -fx-border-color: #17AD96;
+    /*-fx-border-width: 2px 2px 2px 2px;*/
+}
+
+#botonInicio, #botonUsuario, #botonTarjetas, #botonMovs, #botonTransfers, #botonBuzon, #botonPrest, #botonConf{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #19BAA2;
+}
+
+#botonInicio: hover, #botonUsuario: hover, #botonTarjetas: hover, #botonMovs: hover, #botonTransfers: hover, #botonBuzon: hover, #botonPrest: hover, #botonConf: hover{
+    -fx-background-color: #149985;
+    -fx-cursor: hand;
+}
+
+#botonInicio: pressed, #botonUsuario: pressed, #botonTarjetas: pressed, #botonMovs: pressed, #botonTransfers: pressed, #botonBuzon: pressed, #botonPrest: pressed, #botonConf: pressed{
+    -fx-border-color: #1ddbbe;
+    -fx-border-width: 2;
+}
+
+/*
+#cuerpoInicio: hover {
+    -fx-background-color: #00C2A4;
+}*/

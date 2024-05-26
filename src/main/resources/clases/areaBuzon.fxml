@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.areaBuzonControl">
+   <top>
+      <BorderPane prefHeight="65.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <Line endX="100.0" startX="-100.0" BorderPane.alignment="TOP_LEFT">
+               <effect>
+                  <MotionBlur radius="63.0" />
+               </effect>
+               <BorderPane.margin>
+                  <Insets left="25.0" top="5.0" />
+               </BorderPane.margin></Line>
+         </bottom>
+         <left>
+            <Label text="Buzón" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets left="40.0" top="20.0" />
+               </BorderPane.margin></Label>
+         </left></BorderPane>
+   </top>
+   <center>
+      <TableView fx:id="tablaMensaje" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="coluFecha" maxWidth="1000.0" text="Fecha" />
+          <TableColumn fx:id="coluMensaje" text="Mensaje" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+</BorderPane>

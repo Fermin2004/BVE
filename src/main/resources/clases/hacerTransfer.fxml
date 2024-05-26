@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="399.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.hacerTransferControl">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ddbbe" height="273.0" layoutX="-19.0" layoutY="-209.0" rotate="-6.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="708.0" />
+      <Line endX="100.0" layoutX="134.0" layoutY="65.0" startX="-100.0">
+         <effect>
+            <MotionBlur radius="63.0" />
+         </effect>
+      </Line>
+      <TextFlow layoutX="37.0" layoutY="21.0" prefHeight="39.0" prefWidth="346.0">
+         <children>
+            <Label prefHeight="38.0" prefWidth="161.0" text="Transferencia">
+               <font>
+                  <Font size="26.0" />
+               </font></Label>
+            <Label text="Hacer una transferencia">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+         </children>
+      </TextFlow>
+      <Label layoutX="34.0" layoutY="100.0" text="Cantidad">
+         <font>
+            <Font size="14.39" />
+         </font></Label>
+      <TextField fx:id="textoCantidad" layoutX="34.0" layoutY="125.0" prefHeight="32.0" prefWidth="131.0" />
+      <TextField fx:id="textoIBAN" layoutX="179.0" layoutY="125.0" prefHeight="32.0" prefWidth="228.0" />
+      <DatePicker fx:id="textoFecha" editable="false" layoutX="420.0" layoutY="125.0" prefHeight="32.0" prefWidth="115.0" />
+      <TextField fx:id="textoHora" layoutX="551.0" layoutY="125.0" prefHeight="32.0" prefWidth="58.0" AnchorPane.leftAnchor="549.0" />
+      <TextArea fx:id="textoNotas" layoutX="34.0" layoutY="199.0" prefHeight="110.0" prefWidth="407.0" />
+      <Label layoutX="179.0" layoutY="100.0" text="IBAN de la cuenta destino" />
+      <Label layoutX="420.0" layoutY="100.0" text="Fecha de llegada" />
+      <Label layoutX="544.0" layoutY="100.0" text="Hora de llegada" AnchorPane.leftAnchor="548.0" />
+      <Label layoutX="34.0" layoutY="166.0" text="Notas" />
+      <Button fx:id="botonVolver" layoutX="211.0" layoutY="340.0" mnemonicParsing="false" onAction="#volver" prefHeight="22.0" prefWidth="46.0" text="Volver">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button fx:id="botonAceptar" layoutX="309.0" layoutY="336.0" mnemonicParsing="false" onAction="#hacerTranferencia" text="Aceptar" />
+   </children>
+</AnchorPane>

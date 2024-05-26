@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="563.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.CrearClienteControl">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ddbbe" height="623.0" layoutX="110.0" layoutY="-348.0" rotate="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="263.0" />
+      <Label fx:id="textoSaludo" alignment="CENTER" layoutX="55.0" layoutY="30.0" prefHeight="35.0" prefWidth="409.0" text="Label">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="134.0" text="DNI" />
+      <Label layoutX="32.0" layoutY="170.0" text="Nombre" />
+      <TextField fx:id="textoDNI" alignment="CENTER_RIGHT" layoutX="390.0" layoutY="129.0" prefHeight="32.0" prefWidth="93.0" />
+      <TextField id="textoNombre" fx:id="textoNombre" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="165.0" prefHeight="32.0" prefWidth="140.0" />
+      <Label layoutX="262.0" layoutY="170.0" text="Apellidos" />
+      <TextField fx:id="textoApellidos" alignment="CENTER_RIGHT" layoutX="344.0" layoutY="165.0" prefHeight="32.0" prefWidth="140.0" />
+      <Label layoutX="32.0" layoutY="207.0" text="Número de teléfono" />
+      <TextField fx:id="textoTelf" alignment="CENTER_RIGHT" layoutX="389.0" layoutY="200.0" prefHeight="32.0" prefWidth="94.0" />
+      <Label layoutX="32.0" layoutY="239.0" text="Correo electrónico" />
+      <TextField fx:id="textoCorreo" alignment="CENTER_RIGHT" layoutX="207.0" layoutY="236.0" prefHeight="32.0" prefWidth="276.0" />
+      <Label layoutX="32.0" layoutY="277.0" text="Fecha de nacimiento" />
+      <DatePicker fx:id="textoFecha" layoutX="328.0" layoutY="272.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="155.0" />
+      <Label layoutX="32.0" layoutY="313.0" text="Ciudad" />
+      <TextField fx:id="textoCiudad" alignment="CENTER_RIGHT" layoutX="90.0" layoutY="309.0" prefHeight="32.0" prefWidth="118.0" />
+      <Label layoutX="220.0" layoutY="313.0" text="Direcc." />
+      <TextField fx:id="TextoDireccion" alignment="CENTER_RIGHT" layoutX="274.0" layoutY="309.0" prefHeight="32.0" prefWidth="209.0" />
+      <PasswordField fx:id="textoContra" alignment="CENTER_RIGHT" layoutX="304.0" layoutY="346.0" />
+      <Label layoutX="32.0" layoutY="350.0" text="Contraseña" />
+      <Label layoutX="32.0" layoutY="388.0" text="Tipo de cuenta" />
+      <ChoiceBox fx:id="seleccTipo" layoutX="332.0" layoutY="384.0" prefWidth="150.0" />
+      <Label fx:id="textoAviso" layoutX="122.0" layoutY="99.0" text="¡Asegúrese de introducir todos los campos!" textFill="RED" />
+      <CheckBox fx:id="YoRobot" layoutX="32.0" layoutY="427.0" mnemonicParsing="false" onAction="#NoSoyRobot" text="No soy un robot" />
+      <Button fx:id="botonTerminos" layoutX="314.0" layoutY="422.0" mnemonicParsing="false" onAction="#TerminosCondiciones" text="Términos y condiciones" />
+      <Button fx:id="botonCrear" layoutX="210.0" layoutY="480.0" mnemonicParsing="false" onAction="#CrearCuenta" text="Crear cuenta" />
+      <Button fx:id="botonVolver" layoutX="138.0" layoutY="484.0" mnemonicParsing="false" onAction="#Volver" prefHeight="22.0" prefWidth="46.0" text="Volver">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
