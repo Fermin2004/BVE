@@ -118,12 +118,12 @@ public class hacerTransferControl {
                 }
                 hilo.join();
 
-                Alert error = new Alert(Alert.AlertType.INFORMATION);
-                error.setHeaderText(null);
-                error.setTitle("Transferencia realizada");
-                error.setContentText("La transferencia se ha realizado con éxito");
-                error.initOwner(botonAceptar.getScene().getWindow());
-                error.showAndWait();
+                Alert mensaje = new Alert(Alert.AlertType.INFORMATION);
+                mensaje.setHeaderText(null);
+                mensaje.setTitle("Transferencia realizada");
+                mensaje.setContentText("La transferencia se ha realizado con éxito");
+                mensaje.initOwner(botonAceptar.getScene().getWindow());
+                mensaje.showAndWait();
 
                 stage = (Stage) botonVolver.getScene().getWindow();
                 stage.close();
